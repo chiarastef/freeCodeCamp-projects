@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  height: 75px;
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.logo {
+  width: 60vw;
+}
+
+.logo img {
+  width: 300px;
+}
+
+ul.nav-links {
+  display: flex;
+  width: 35vw;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: #000;
+  text-decoration: none;
+}

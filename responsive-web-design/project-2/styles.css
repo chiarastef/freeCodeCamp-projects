@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,400&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(images/survey-form-background.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  color: white;
+  margin: 50px 0 30px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+header p {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+form.survey-form {
+  width: 740px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 40px;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label,
+.form-group p {
+  color: white;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  height: 38px;
+  padding: 6px 12px;
+}
+
+.form-control,
+.form-group textarea {
+  width: 100%;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus,
+.form-group textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+label span,
+p span {
+  font-size: 14.4px;
+}
+
+label.label-radio-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.form-group textarea {
+  height: 120px;
+  padding: 10px;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 12px;
+  background-color: #37af65;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Large devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  form.survey-form {
+    width: 65%;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  form.survey-form {
+    width: 65%;
+    padding: 30px;
+  }
+}
+
+/* Small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  form.survey-form {
+    padding: 20px;
+    width: 80%;
+  }
+
+  .form-group label,
+  .form-group p {
+    font-size: 17px;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* X-Small devices */
+@media (max-width: 575px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 15px;
+  }
+
+  form.survey-form {
+    width: 100%;
+  }
+
+  .form-group label,
+  .form-group p {
+    font-size: 16px;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+    font-size: 15px;
+  }
+}
