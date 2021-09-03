@@ -14,7 +14,9 @@ body {
 /* Navbar */
 
 nav {
+  background-color: #eee;
   position: fixed;
+  top: 0;
   display: flex;
   min-height: 75px;
   padding: 0px 20px;
@@ -46,6 +48,46 @@ li a {
 }
 
 /* End navbar */
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+main h2 {
+  margin-bottom: 20px;
+}
+
+form input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  display: inline-block;
+  margin: auto;
+}
+
+form input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  background-color: #f1c40f;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border: 0;
+  border-radius: 2px;
+  padding: 5px 16px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* End main */
 
 @media (max-width: 320px) {
   /* Navbar */
@@ -93,4 +135,10 @@ li a {
     padding-bottom: 5px;
   }
   /* End navbar */
+
+  /* Main */
+  main {
+    margin-top: 120px;
+  }
+  /* End main */
 }
