@@ -173,7 +173,7 @@ form input[type="submit"]:hover {
 }
 
 .product ul {
-  margin: 15px 0;
+  margin: 12px 0;
 }
 
 .product ul li {
@@ -182,17 +182,42 @@ form input[type="submit"]:hover {
 
 .product button {
   background-color: #f1c40f;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
   border: 0;
   border-radius: 2px;
-  padding: 10px 16px;
-  margin: 15px 0;
+  padding: 12px 20px;
+  margin: 12px 0;
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
 
 /* End pricing */
+
+/* Footer */
+footer {
+  background-color: #dddddd;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer ul li {
+  padding: 0 10px;
+}
+
+footer div {
+  font-size: 14.5px;
+  color: #444;
+  text-align: right;
+  margin-top: 5px;
+}
+/* End footer */
 
 @media (max-width: 320px) {
   /* Navbar */
@@ -200,6 +225,28 @@ form input[type="submit"]:hover {
     padding: 0;
   }
   /* End navbar */
+
+  /* Features */
+  .single-feature .feature-description {
+    margin-bottom: 10px;
+  }
+  /* End features */
+
+  /* Pricing */
+  .product ul li {
+    font-size: 14.5px;
+  }
+  /* Pricing */
+
+  /* Footer */
+  footer {
+    font-size: 14px;
+  }
+
+  footer div {
+    font-size: 12px;
+  }
+  /* End footer */
 }
 
 @media (max-width: 600px) {
@@ -233,6 +280,14 @@ form input[type="submit"]:hover {
     text-align: center;
     padding: 0;
     height: 130px;
+  }
+
+  .single-feature .feature-description {
+    line-height: 22px;
+  }
+
+  .feature-description h2 {
+    margin-bottom: 7px;
   }
   /* End features */
 }
