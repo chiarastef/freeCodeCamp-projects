@@ -118,8 +118,20 @@ form input[type="submit"]:hover {
   width: 55%;
   padding: 5px;
 }
-
 /* End features */
+
+/* How it works */
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 95%;
+}
+/* End how it works */
 
 @media (max-width: 320px) {
   /* Navbar */
