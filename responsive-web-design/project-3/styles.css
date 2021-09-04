@@ -12,7 +12,6 @@ body {
 }
 
 /* Navbar */
-
 nav {
   background-color: #eee;
   position: fixed;
@@ -46,11 +45,9 @@ li a {
   color: #000;
   text-decoration: none;
 }
-
 /* End navbar */
 
 /* Main */
-
 main {
   display: flex;
   flex-direction: column;
@@ -85,9 +82,44 @@ form input[type="submit"] {
   padding: 5px 16px;
   margin: 15px 0;
   cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
+form input[type="submit"]:hover {
+  background-color: #ffa500;
+}
 /* End main */
+
+/* Features */
+#features {
+  margin-top: 30px;
+}
+
+.single-feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.single-feature .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff8c00;
+  height: 125px;
+  width: 20%;
+}
+
+.single-feature .feature-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 55%;
+  padding: 5px;
+}
+
+/* End features */
 
 @media (max-width: 320px) {
   /* Navbar */
@@ -117,6 +149,19 @@ form input[type="submit"] {
     width: 100%;
   }
   /* End navbar */
+
+  /* Features */
+  .single-feature .icon {
+    display: none;
+  }
+
+  .single-feature .feature-description {
+    width: 90%;
+    text-align: center;
+    padding: 0;
+    height: 130px;
+  }
+  /* End features */
 }
 
 @media (max-width: 768px) {
@@ -138,7 +183,13 @@ form input[type="submit"] {
 
   /* Main */
   main {
-    margin-top: 120px;
+    margin-top: 125px;
   }
   /* End main */
+
+  /* Features */
+  #features {
+    margin-top: 0;
+  }
+  /* End features */
 }
