@@ -90,6 +90,12 @@ form input[type="submit"]:hover {
 }
 /* End main */
 
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* Features */
 #features {
   margin-top: 30px;
@@ -115,7 +121,7 @@ form input[type="submit"]:hover {
   flex-direction: column;
   justify-content: center;
   height: 125px;
-  width: 55%;
+  width: 80%;
   padding: 5px;
 }
 /* End features */
@@ -132,6 +138,61 @@ form input[type="submit"]:hover {
   width: 95%;
 }
 /* End how it works */
+
+/* Pricing */
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product .type {
+  background-color: #dddddd;
+  width: 100%;
+  padding: 15px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product .price {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.product ul {
+  margin: 15px 0;
+}
+
+.product ul li {
+  margin: 10px 0;
+}
+
+.product button {
+  background-color: #f1c40f;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 2px;
+  padding: 10px 16px;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+/* End pricing */
 
 @media (max-width: 320px) {
   /* Navbar */
@@ -204,4 +265,18 @@ form input[type="submit"]:hover {
     margin-top: 0;
   }
   /* End features */
+
+  /* Pricing */
+  #pricing {
+    flex-direction: column;
+  }
+
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  /* End pricing */
 }
