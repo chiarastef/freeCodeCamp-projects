@@ -40,7 +40,7 @@ nav ul li {
   padding: 10px 30px;
 }
 
-li a {
+nav li a {
   text-decoration: none;
   color: #4d4e53;
   cursor: pointer;
@@ -72,6 +72,16 @@ article li {
 
 section li {
   margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  background-color: #f7f7f7;
+  line-height: 2;
+  white-space: pre-line;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 /* End main document */
