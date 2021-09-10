@@ -27,7 +27,6 @@ a {
 }
 
 /* Navbar */
-
 nav {
   position: fixed;
   top: 0;
@@ -55,7 +54,6 @@ nav a {
 nav a:hover {
   background-color: #45567d;
 }
-
 /* End navbar */
 
 /* Welcome section */
@@ -157,8 +155,69 @@ nav a:hover {
 .projects-section button:hover i {
   transform: translateX(2px);
 }
-
 /*End project section */
+
+/*Contact section */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #303841;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+}
+
+.contact-section h2 {
+  font-size: 6rem;
+}
+
+.contact-section p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  padding: 1rem 2rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+/*End contact section */
+
+/*Footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: #303841;
+  border-top: 4px solid #be3144;
+}
+
+footer p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+/*End footer */
 
 /* Tablet */
 @media (max-width: 48em) {
@@ -188,5 +247,14 @@ nav a:hover {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-section h2 {
+    font-size: 4rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
   }
 }
